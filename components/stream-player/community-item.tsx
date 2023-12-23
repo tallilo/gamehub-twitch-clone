@@ -31,7 +31,7 @@ export const CommunityItem = ({
     startTransition(() => {
       onBlock(participantIdentity)
         .then((data) => {
-          toast.success(`${data.blocked.username} was blocked successfuly!`);
+          toast.success(`${data?.blocked.username} was blocked successfuly!`);
         })
         .catch(() => {
           toast.error("Something went wrong");
